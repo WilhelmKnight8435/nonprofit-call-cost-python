@@ -1,0 +1,1 @@
+"""Nonprofit cost example package."""

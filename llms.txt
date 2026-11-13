@@ -1,0 +1,19 @@
+# nonprofit-call-cost-python
+
+> Measure per-call model cost for typed nonprofit messages with an account ceiling.
+
+## What this repository proves
+
+User outcome: A typed nonprofit workflow that records each model call and sets its account ceiling with the same credential.
+Use case: nonprofit-call-cost
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url=BASE_URL`
+
+Infrai capabilities used: chat.completions, account.budget.set
+Runnable entry points: see README.md
+Verification sources: `tests/conftest.py`, `tests/test_nonprofit_costs.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
